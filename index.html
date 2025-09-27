@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweet Crust Bakery</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!--font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="logo">
+          <a href="#"><span class="mark">🥐</span><span class="brand"><span class="brand-script">Sweet Crust</span> <span class="brand-sans">Bakery</span></span></a>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-controls">
+          <button id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="navToggle" class="hamburger" aria-label="Open navigation" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="hero-inner">
+        <h1>Freshly Baked Happiness Every Day 🍞</h1>
+        <p class="hero-sub">Artisan breads, pastries & coffee — baked from the heart.</p>
+        <a class="btn primary-cta" href="#menu">Order Now</a>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section menu-section">
+      <div class="section-header">
+        <h2>Featured Treats</h2>
+        <p>Hand-picked favorites — ready to warm your day.</p>
+      </div>
+
+      <div class="menu-list" role="list">
+        <!-- Card 1 -->
+        <article class="menu-card" role="listitem">
+          <img src="images/Country Sourdough.jpg" alt="Sourdough loaf">
+          <div class="card-body">
+            <h3 class="item-title">Country Sourdough</h3>
+            <p class="item-desc">Crisp crust, open crumb, fermented for deep flavor.</p>
+            <div class="card-row">
+              <span class="price">₦3,500</span>
+              <a class="btn small" href="https://wa.me/234000000000?text=I'd%20like%20to%20order%20Country%20Sourdough">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="menu-card" role="listitem">
+          <img src="images/chocolate-croissants.jpg" alt="Chocolate croissant">
+          <div class="card-body">
+            <h3 class="item-title">Chocolate Croissant</h3>
+            <p class="item-desc">Layered, buttery, filled with rich dark chocolate.</p>
+            <div class="card-row">
+              <span class="price">₦1,200</span>
+              <a class="btn small" href="https://wa.me/234000000000?text=I'd%20like%20to%20order%20Chocolate%20Croissant">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="menu-card" role="listitem">
+          <img src="images/Vanilla Cupcake.jpg" alt="Cupcake">
+          <div class="card-body">
+            <h3 class="item-title">Vanilla Cupcake</h3>
+            <p class="item-desc">Fluffy vanilla cake with creamy buttercream.</p>
+            <div class="card-row">
+              <span class="price">₦850</span>
+              <a class="btn small" href="https://wa.me/234000000000?text=I'd%20like%20to%20order%20Vanilla%20Cupcake">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="menu-card" role="listitem">
+          <img src="images/cinamon roll.jpg" alt="Cinnamon roll">
+          <div class="card-body">
+            <h3 class="item-title">Cinnamon Roll</h3>
+            <p class="item-desc">Sticky, gooey, topped with cream cheese icing.</p>
+            <div class="card-row">
+              <span class="price">₦1,100</span>
+              <a class="btn small" href="https://wa.me/234000000000?text=I'd%20like%20to%20order%20Cinnamon%20Roll">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="menu-card" role="listitem">
+          <img src="images/Classic Baguette.jpg" alt="Baguette">
+          <div class="card-body">
+            <h3 class="item-title">Classic Baguette</h3>
+            <p class="item-desc">Golden, crusty, perfect with cheese.</p>
+            <div class="card-row">
+              <span class="price">₦2,000</span>
+              <a class="btn small" href="https://wa.me/234000000000?text=I'd%20like%20to%20order%20Baguette">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="menu-card" role="listitem">
+          <img src="images/Pastry Box.jpg" alt="Assorted pastries">
+          <div class="card-body">
+            <h3 class="item-title">Pastry Box (6 pcs)</h3>
+            <p class="item-desc">A selection of our daily pastries.</p>
+            <div class="card-row">
+              <span class="price">₦5,000</span>
+              <a class="btn small" href="https://wa.me/234000000000?text=I'd%20like%20to%20order%20Pastry%20Box">Order</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Our Story</h2>
+          <p>Sweet Crust Bakery started with a single oven and a belief that slow fermentation and real butter matter. We bake each day using classic techniques and locally sourced ingredients.</p>
+          <p class="muted">Open: Mon–Sat • 7am–6pm</p>
+        </div>
+        <div class="about-image">
+          <img src="images/pastry chef.jpg" alt="Bakery interior with chef">
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials-section" id="testimonials">
+  <div class="section-header">
+    <h2>What customers say</h2>
+  </div>
+  <div class="testimonial-carousel">
+    <div class="testimonial-track" id="testimonialTrack">
+      <article class="testimonial testimonial-slide">
+        <p class="quote">"Best sourdough in town — crusty and full of flavor. I buy weekly!"</p>
+        <p class="author">— Ada, Lagos</p>
+      </article>
+      <article class="testimonial testimonial-slide">
+        <p class="quote">"Their pastries are light and buttery. Perfect with morning coffee."</p>
+        <p class="author">— Musa, Lekki</p>
+      </article>
+      <article class="testimonial testimonial-slide">
+        <p class="quote">"Ordered a cake for my daughter's birthday. It was beautiful and delicious."</p>
+        <p class="author">— Chioma, Abuja</p>
+      </article>
+    </div>
+  </div>
+</section>
+     
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header">
+        <h2>Contact & Order</h2>
+        <p>Use the form or message us on WhatsApp for quick orders.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post" onsubmit="alert('Form demo — implement backend or use email/WhatsApp link.'); return false;">
+          <label>
+            <span class="label-text">Name</span>
+            <input type="text" name="name" required placeholder="Your name">
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="4" required placeholder="What would you like to order?"></textarea>
+          </label>
+
+          <div class="form-row">
+            <button class="btn primary-cta" type="submit">Send Message</button>
+            <a class="btn outline" href="https://wa.me/234000000000?text=Hi%20Sweet%20Crust%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </form>
+
+        <div class="map-placeholder" aria-hidden="true">
+          <!-- Replace src with your Google Maps embed when ready -->
+          <iframe
+            title="Bakery location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.337699040582!2d3.8987618142559596!3d7.06712909480739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bfde3be2f7b0f%3A0x6d6c7b8b5c8b6a11!2sLagos!5e0!3m2!1sen!2sng!4v1618888888888!5m2!1sen!2sng"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="socials">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/234000000000" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Sweet Crust Bakery. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // small JS for nav toggle and small niceties
+    (function () {
+      const navToggle = document.getElementById('navToggle');
+      const mainNav = document.getElementById('mainNav');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      navToggle.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        mainNav.classList.toggle('open');
+      });
+
+      navLinks.forEach(link => link.addEventListener('click', () => {
+        // close nav after link click (mobile)
+        if (mainNav.classList.contains('open')) {
+          mainNav.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      }));
+
+      // Set copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+    
+  // Infinite Testimonial Carousel
+  (function () {
+    const track = document.getElementById('testimonialTrack');
+    if (!track) return;
+
+    const originalSlides = Array.from(track.children);
+    if (originalSlides.length === 0) return;
+    
+    // Clone slides for the infinite effect
+    originalSlides.forEach(slide => {
+      const clone = slide.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    // The continuous scroll is now handled by CSS animation.
+    // The JS is only needed to duplicate the slides for a seamless loop.
+  })();
+  
+  // Theme toggle
+  const themeToggle = document.getElementById('themeToggle');
+  themeToggle.addEventListener('click', function () {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+  });
+
+  // Scroll-in animation for hero text
+  (function() {
+    const heroSection = document.querySelector('.hero');
+    if (!heroSection) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add class when element is in view
+          entry.target.classList.add('is-visible');
+        } else {
+          // Remove class when element is out of view to reset animation
+          entry.target.classList.remove('is-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    observer.observe(heroSection);
+  })();
+
+  // Scroll-in animation for menu cards
+  (function() {
+    const cards = document.querySelectorAll('.menu-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target); // Stop observing once it's visible
+        }
+      });
+    }, {
+      threshold: 0.1 // Trigger when 10% of the card is visible
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  })();
+
+  // Scroll to Top Button Logic
+  (function() {
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    window.onscroll = function() {
+      // Show button if user has scrolled down more than 300px
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    };
+
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  })();
+
+  </script>
+</body>
+</html>
