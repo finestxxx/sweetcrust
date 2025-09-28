@@ -280,18 +280,35 @@
     // The JS is only needed to duplicate the slides for a seamless loop.
   })();
   
-  // Theme toggle
-  const themeToggle = document.getElementById('themeToggle');
-  themeToggle.addEventListener('click', function () {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'light');
-      themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+  // Persistent Theme Toggle
+  (function() {
+    const themeToggle = document.getElementById('themeToggle');
+    const sunIcon = '<i class="fas fa-sun"></i>';
+    const moonIcon = '<i class="fas fa-moon"></i>';
+
+    // Function to apply the theme
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeToggle.innerHTML = sunIcon;
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        themeToggle.innerHTML = moonIcon;
+        localStorage.setItem('theme', 'light');
+      }
     }
-  });
+
+    themeToggle.addEventListener('click', function () {
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+
+    // On page load, apply the saved theme
+    const savedTheme = localStorage.getItem('theme');
+    applyTheme(savedTheme || 'light'); // Default to light theme if nothing is saved
+  })();
 
   // Scroll-in animation for hero text
   (function() {
